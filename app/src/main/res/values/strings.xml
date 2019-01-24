@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Weather&amp;Sun</string>
+    <string name="forecast_url"></string>
+</resources>
