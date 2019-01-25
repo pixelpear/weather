@@ -18,8 +18,13 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        externalNativeBuild {
+            ndkBuild {
+                path 'src/main/jni/Android.mk'
+            }
         }
     }
 }
